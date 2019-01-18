@@ -8,11 +8,14 @@ Citing
 If you use this application for scientific work, please consider citing us as
 ```
 @inproceedings{rojtberg2018,
-    author = "Rojtberg, Pavel and Kuijper, Arjan",
-    title = "Efficient Pose Selection for Interactive Camera Calibration",
-    year = "2018",
-    booktitle = "Proceedings of the IEEE International Symposium for Mixed and Augmented Reality 2018 (To appear)",
-    organization={IEEE}
+    author={P. Rojtberg and A. Kuijper},
+    booktitle={2018 IEEE International Symposium on Mixed and Augmented Reality (ISMAR)},
+    title={Efficient Pose Selection for Interactive Camera Calibration},
+    year={2018},
+    pages={31-36},
+    doi={10.1109/ISMAR.2018.00026},
+    ISSN={1554-7868},
+    month={Oct}
 }
 ```
 
@@ -30,8 +33,6 @@ After convergence, the resulting calibration properties will be written as `cali
 
 Camera, image resolution and charuco settings can be changed via the calibration config file.
 
-A pre-build package for Ubuntu is installable via the snapcraft store as
+A pre-build package for Ubuntu is installable via the snapcraft store
 
-```
-sudo snap install posecalib
-```
+[![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/posecalib)
