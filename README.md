@@ -19,6 +19,13 @@ If you use this application for scientific work, please consider citing us as
 }
 ```
 
+Dependencies
+============
+- Python: 3.x
+- OpenCV: 3.x
+    - including OpenCV contrib
+    - compiled with Qt highui backend
+
 Usage
 =====
 
