@@ -51,7 +51,7 @@ class UserGuidance:
         self.board_warped = None
 
         self.var_terminate = var_terminate
-        self.pconverged = np.zeros(self.calib.nintr, dtype=np.bool)
+        self.pconverged = np.zeros(self.calib.nintr, dtype=bool)
 
         self.converged = False
         self.tgt_param = None
