@@ -265,7 +265,7 @@ def calibrateCamera(keyframes, img_size, flags, K):
         pts3d.append(p3d)
         N += len(p2d)
 
-    res = cv2.calibrateCamera(np.array(pts3d), np.array(pts2d), img_size, K, None, flags=flags)
+    res = cv2.calibrateCamera(pts3d, pts2d, img_size, K, None, flags=flags)
 
     reperr, K, cdist, rvecs, tvecs = res
     cov = compute_state_cov(pts3d, rvecs, tvecs, K, cdist, flags)

@@ -15,6 +15,8 @@ def get_bounds(thresh, mask):
     MAX_OVERLAP = 0.9
     contours = cv2.findContours(thresh, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)[1]
 
+    contours = list(contours)
+
     # look for the largest object that is not masked
     while contours:
         mx = np.argmax([len(c) for c in contours])
